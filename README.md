@@ -12,7 +12,8 @@ scheme applied under Arch Linux.
 Usage
 -----
 
-From a linux terminal (CTRL+[F1..F12]):
+From a linux terminal (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> +
+[<kbd>F1</kbd>..<kbd>F12</kbd>])
 
 ```
 setvtrgb vtrgb/base16-tomorrow
