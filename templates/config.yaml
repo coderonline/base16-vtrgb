@@ -1,0 +1,4 @@
+default: 
+    extension: .vga
+    output: consolecolors
+
