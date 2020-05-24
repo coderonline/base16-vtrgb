@@ -4,8 +4,9 @@ base16 for virtual terminals
 This repository can be used with any base16-builder to create base16 color
 schemes compatible with `setvtrgb`
 
-The color schemes can be made active in early boot stages and there is a systemd
-hook for that.
+The color schemes can be applied during the early boot stage and there is a
+initcpio hook for that. I can enter my encryption password with the color
+scheme applied under Arch Linux.
 
 
 Usage
