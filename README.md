@@ -6,7 +6,8 @@ schemes compatible with `setvtrgb`
 
 The color schemes can be applied during the early boot stage and there is a
 initcpio hook for that. I can enter my encryption password with the color
-scheme applied under Arch Linux.
+scheme applied under Arch Linux. There is an
+[AUR Package](https://aur.archlinux.org/packages/base16-vtrgb/) available.
 
 
 Usage
