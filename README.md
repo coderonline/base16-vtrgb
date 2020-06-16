@@ -37,6 +37,17 @@ and it contains color scheme information there as well. By doing that I hope
 that my packages will be compatible across distributions, but we will see.
 
 
+Installation of the AUR package
+-------------------------------
+
+Under Arch Linux it is exceptionally easy to use console colors. The
+installation could be as simple as
+
+```
+yay -S base16-vtrgb
+sudo ln -sf /usr/share/kbd/consolecolors/base16-papercolor-light.vga /etc/vtrgb
+```
+
 
 Issues or Contributions
 -----------------------
