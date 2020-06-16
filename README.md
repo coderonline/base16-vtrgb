@@ -41,13 +41,19 @@ Installation of the AUR package
 -------------------------------
 
 Under Arch Linux it is exceptionally easy to use console colors. The
-installation could be as simple as
+installation could be as simple as:
 
 ```
 yay -S base16-vtrgb
 sudo ln -sf /usr/share/kbd/consolecolors/base16-papercolor-light.vga /etc/vtrgb
 ```
 
+Add the `setvtrgb` as first HOOK in `/etc/mkinitcpio.conf` and recreate
+your initramfs with:
+
+```
+sudo mkinitcpio
+```
 
 Issues or Contributions
 -----------------------
