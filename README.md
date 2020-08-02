@@ -10,6 +10,9 @@ scheme applied under Arch Linux. There is an
 [AUR Package](https://aur.archlinux.org/packages/base16-vtrgb/) available.
 
 
+![screenshot](screenshot.jpg)
+
+
 Usage
 -----
 
