@@ -51,11 +51,19 @@ yay -S base16-vtrgb
 sudo ln -sf /usr/share/kbd/consolecolors/base16-papercolor-light.vga /etc/vtrgb
 ```
 
-Add the `setvtrgb` as first HOOK in `/etc/mkinitcpio.conf` and recreate
+Add the `setvtrgb,consolefont` as HOOKS in `/etc/mkinitcpio.conf` and recreate
 your initramfs with:
 
 ```
-sudo mkinitcpio
+vim /etc/mkinitcpio.conf
+/HOOKS
+
+[...]
+HOOKS=(setvtrgb consolefont base udev modconf block keyboard zfs filesystems)
+[...]
+:wq
+
+mkinitcpio -plinux
 ```
 
 Issues or Contributions
