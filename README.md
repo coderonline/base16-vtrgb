@@ -63,7 +63,7 @@ HOOKS=(setvtrgb consolefont base udev modconf block keyboard zfs filesystems)
 [...]
 :wq
 
-mkinitcpio -plinux
+mkinitcpio -p linux
 ```
 
 Issues or Contributions
