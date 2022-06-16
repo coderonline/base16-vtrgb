@@ -8,7 +8,7 @@ node("go") {
 		sh 'pwd && base16-builder-go/base16-builder-go -schemes-dir base16-builder-go/schemes'
 	}
 	stage('deploy') {
-		sh 'test `git ls-files -m | wc -l` -gt 0'
+		sh 'test `git ls-files -mo consolecolors | wc -l` -gt 0'
 		sh 'git add .'
 		sh 'git commit -m "Update `date +%Y-%m-%d`"'
 		sh 'git tag `date +Y-%m-%d`'
