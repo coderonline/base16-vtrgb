@@ -11,7 +11,7 @@ node("go") {
 		sh 'test `git ls-files -mo consolecolors | wc -l` -gt 0'
 		sh 'git add .'
 		sh 'git commit -m "Update `date +%Y-%m-%d`"'
-		sh 'git tag `date +Y-%m-%d`'
+		sh 'git tag `date +%Y-%m-%d`'
 		sh 'git push github'
 	}
 }
