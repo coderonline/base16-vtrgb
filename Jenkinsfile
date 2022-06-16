@@ -5,7 +5,7 @@ node("go") {
 	}
 	stage('build') {
 		sh 'cd base16-builder-go && go build || echo "errors will be ignored for now"'
-		sh './base16-builder-go/base16-builder-go -schemes-dir base16-schemes'
+		sh 'cd .. && ./base16-builder-go/base16-builder-go -schemes-dir base16-schemes'
 	}
 	stage('deploy') {
 		sh 'test `git ls-files -m | wc -l` -gt 0'
