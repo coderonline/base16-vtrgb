@@ -1,5 +1,6 @@
 node("go") {
 	stage('prepare') {
+		checkout scm
 		sh 'git submodule update --init --recursive --remote'
 	}
 	stage('build') {
