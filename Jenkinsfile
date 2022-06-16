@@ -4,8 +4,9 @@ node("go") {
 		sh 'git submodule update --init --recursive --remote'
 	}
 	stage('build') {
+		sh 'ln -s base16-schemes schemes'
 		sh 'cd base16-builder-go && go build'
-		sh './base16-builder-go/base16-builder-go -schemes-dir base16-schemes'
+		// sh './base16-builder-go/base16-builder-go -schemes-dir base16-schemes'
 	}
 	stage('deploy') {
 		sh 'test `git ls-files -m | wc -l` -gt 0'
