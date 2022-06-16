@@ -1,10 +1,9 @@
 node("go") {
-	stage('prepare builder') {
-		sh 'git clone https://github.com/base16-project/base16-builder-go'
-		sh 'git clone https://github.com/base16-project/base16-schemes.git schemes'
-		sh 'cd base16-builder-go && go build'
+	stage('prepare') {
+		sh 'git submodule update --init --recursive --remote'
 	}
 	stage('build') {
+		sh 'cd base16-builder-go && go build'
 		sh './base16-builder-go/base16-builder-go'
 	}
 	stage('deploy') {
