@@ -66,6 +66,19 @@ HOOKS=(setvtrgb consolefont base udev modconf block keyboard zfs filesystems)
 mkinitcpio -p linux
 ```
 
+If using `systemd` and `sd-vconsole`, use the `sd-setvtrgb` service hook instead:
+```
+vim /etc/mkinitcpio.conf
+/HOOKS
+
+[...]
+HOOKS=(base systemd sd-setvtrgb sd-vconsole modconf block keyboard zfs filesystems)
+[...]
+:wq
+
+mkinitcpio -p linux
+```
+
 Issues or Contributions
 -----------------------
 
