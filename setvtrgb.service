@@ -1,0 +1,8 @@
+[Unit]
+Description=Setup the console vtrgb colors
+DefaultDependencies=no
+ConditionPathExists=/etc/vtrgb
+
+[Service]
+Type=oneshot
+ExecStart=setvtrgb /etc/vtrgb
