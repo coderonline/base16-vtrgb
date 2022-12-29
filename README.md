@@ -20,6 +20,7 @@ From a linux terminal (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> +
 [<kbd>F1</kbd>..<kbd>F12</kbd>])
 
 ```
+cd /usr/share/kbd/consolecolors/
 setvtrgb vtrgb/base16-tomorrow
 ```
 
