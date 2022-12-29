@@ -1,0 +1,5 @@
+bin
+templates/
+output/
+sources.yaml
+sources/
