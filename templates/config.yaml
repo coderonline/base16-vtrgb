@@ -2,3 +2,6 @@ default:
     extension: .vga
     output: consolecolors
 
+hex:
+    extension: .hex
+    output: consolecolors
