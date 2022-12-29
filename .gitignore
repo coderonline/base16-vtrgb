@@ -1,6 +1,5 @@
 bin
 templates/
 output/
-schemes/
 sources.yaml
 sources/

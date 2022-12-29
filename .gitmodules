@@ -1,6 +1,3 @@
 [submodule "base16-builder-go"]
 	path = base16-builder-go
 	url = https://github.com/base16-project/base16-builder-go
-[submodule "base16-schemes"]
-	path = base16-builder-go/schemes
-	url = https://github.com/base16-project/base16-schemes.git

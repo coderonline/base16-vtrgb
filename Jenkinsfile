@@ -4,15 +4,15 @@ node("go") {
 		sh 'git submodule update --init --recursive --remote'
 	}
 	stage('build') {
-		sh 'cd base16-builder-go && go build || echo "errors will be ignored for now"'
-		sh 'pwd && base16-builder-go/base16-builder-go -schemes-dir base16-builder-go/schemes'
+		sh './build.sh'
 	}
 	stage('deploy') {
 		sh 'test `git ls-files -mo consolecolors | wc -l` -gt 0'
 		sh 'git add .'
 		sh 'git commit -m "Update `date +%Y-%m-%d`"'
 		sh 'git tag `date +%Y-%m-%d`'
-		sh 'git push github'
+		sh 'git remote add github git@github.com:coderonline/base16-vtrgb.git || echo WARNING: Ignored an error.'
+		sh 'git push github HEAD:master'
 	}
 }
 
