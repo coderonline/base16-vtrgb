@@ -21,7 +21,8 @@ From a linux terminal (<kbd>Ctrl</kbd> + <kbd>Alt</kbd> +
 
 ```
 cd /usr/share/kbd/consolecolors/
-setvtrgb base16-tomorrow
+setvtrgb base16-tomorrow.vga
+setvtrgb base16-tomorrow-night.hex  # for newer versions of setvtrgb
 ```
 
 Installation
